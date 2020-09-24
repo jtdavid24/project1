@@ -1,0 +1,25 @@
+/* selector universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: red;
+}
+/*pseudo clase usando :*/
+h1:hover {
+  color: aqua;
+}
+
+/*pseudo elemento usando ::  */
+h1::after {
+  content: "/";
+}
+
+/* Inherit -> hereda el valor del elemento padre  */
+
+h1 {
+  font-family: inherit;
+}

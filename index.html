@@ -4,8 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 1 JTDAVID24</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <p>Este es mi proyecto</p>
+    <h1>This is my project</h1>
+    <figure>
+      <img src="/12427_1435522675.jpg" alt="Imagen de erj190 " />
+    </figure>
+    <div>
+      <!-- atributo controls del video  -->
+      <video controls src="/DOM - EPM20 _ CQG 2020-05-28 16-59-40.mp4"></video>
+    </div>
+    <div>
+      <form action="">
+        <label for="name"></label>
+        <input type="text" id="name" autocomplete="name" /> <br />
+        <p>Are you a guest?</p>
+        <label for="guest"></label>
+        <input type="checkbox" id="guest" required /> <br />
+        <div>
+          <input list="language" />
+          <datalist id="language">
+            <option value="english"></option>
+            <option value="spanish"></option>
+            <option value="german"></option>
+          </datalist>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
