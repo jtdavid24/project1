@@ -1,4 +1,4 @@
-/* selector universal */
+/* selector universal - usar estos valores x default */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,20 +6,92 @@
 }
 
 body {
-  color: red;
+  color: black;
 }
-/*pseudo clase usando :*/
+/*pseudo clase usando :   */
 h1:hover {
   color: aqua;
 }
 
 /*pseudo elemento usando ::  */
-h1::after {
-  content: "/";
+h1::first-letter {
+  color: darkgreen;
 }
 
 /* Inherit -> hereda el valor del elemento padre  */
 
 h1 {
   font-family: inherit;
+  display: inline-block;
+}
+
+.container {
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  text-align: center;
+}
+
+#lorem {
+  color: aqua;
+  width: 500px;
+  background-color: darkgoldenrod;
+  position: relative;
+  padding: 1rem;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+#titulo {
+  background-color: rgb(147, 136, 173);
+  color: blue;
+
+  text-align: center;
+  margin: 10px;
+  border: 10px;
+  padding-top: 0%;
+  position: relative;
+  border-radius: 4px;
+  bottom: 75px;
+  left: 280px;
+}
+
+#image1 {
+  width: 50%;
+  height: 50%;
+}
+header {
+  display: flex;
+  background-color: darkseagreen;
+  justify-content: space-between;
+  height: 50px;
+}
+header nav {
+  text-align: right;
+}
+.mainrigth {
+  background-color: deeppink;
+  width: 80%;
+  height: 500px;
+}
+.mainleft {
+  background-color: blueviolet;
+  width: 20%;
+  height: 500px;
+}
+#sec1 {
+  display: flex;
+}
+
+.mainleft div {
+  height: 200px;
+  border: 1px black solid;
+}
+footer {
+  background-color: coral;
+  height: 90px;
+  justify-content: space-between;
+  display: flex;
 }
