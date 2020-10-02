@@ -83,6 +83,7 @@ header nav {
 }
 #sec1 {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mainleft div {
