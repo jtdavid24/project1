@@ -29,6 +29,10 @@ a {
 
 .nav-list a {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+.nav-list a:hover {
+  text-decoration: underline;
 }
 .icon {
   width: 25px;
@@ -54,26 +58,92 @@ main {
   height: 92px;
 }
 .container-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px #dfe1e5 solid;
   width: 584px;
   height: 46px;
   margin: auto;
   border-radius: 25px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.container-input:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
 }
 input {
-  margin-top: 3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   width: 487px;
   height: 34px;
   border-color: transparent;
   background-color: transparent;
+  outline: none;
+  font-size: 16px;
 }
 button {
   height: 36px;
+  padding: 10px;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   color: #5f6368;
   font-size: 14px;
+  border-radius: 5px;
   margin-left: 10px;
+}
+button:hover {
+  color: black;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+}
+span {
+  background-image: url("https://www.pngfind.com/pngs/m/109-1092764_search-icon-icon-find-svg-hd-png-download.png");
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+.voice-search {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+  background-position: center;
+  background-size: contain;
+  width: 15px;
+  height: 20px;
+}
+footer {
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  border: 1px solid #e4e4e4;
+}
+footer ul {
+  list-style: none;
+  font-size: 14px;
+  display: flex;
+  color: #5f6368;
+}
+footer ul li {
+  padding-left: 10px;
+}
+.footer-left {
+  float: left;
+  padding-left: 5px;
+}
+.footer-right {
+  float: right;
+  padding-right: 20px;
+}
+footer li a {
+  text-decoration: none;
+  color: #5f6368;
+}
+footer li a:hover {
+  text-decoration: underline;
 }
